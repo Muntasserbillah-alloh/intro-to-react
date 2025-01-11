@@ -1,0 +1,21 @@
+.bar-header{
+    align-items: stretch;
+    border-bottom: var(--primary-border);
+    padding: 0 1rem;
+    .center-nav{
+        height: 100%;
+        font-weight: bold;
+    }
+    .logo-col{
+        padding: 1rem 0rem;
+    }
+    .last-icon-section {
+        height: 100%;
+        border-left: var(--primary-border);
+        .cart-icon{
+            transform: scaleX(-1);
+            color: #000;
+            font-size: 1.2rem;
+        }
+    }
+}

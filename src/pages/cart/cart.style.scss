@@ -1,0 +1,10 @@
+.cart{
+    padding-top: 3rem;
+    .summary-card{
+        border: var(--primary-border);
+        .title{
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+    }
+}
