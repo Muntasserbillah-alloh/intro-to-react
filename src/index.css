@@ -10,11 +10,11 @@
   --text-alt-color-1: rgb(29, 31, 44);
   --text-alt-color-2: rgb(119, 121, 128);
   --text-alt-color-3: rgb(102, 112, 133);
-  --text-alt-color-4: rgb(133, 141, 157);
+  --text-alt-color-4: rgba(0, 0, 0, 0.3);
   --text-green-color: rgb(26, 152, 130);
   --text-red-color: rgb(235, 61, 77);
   
-  font-family: sans-serif, Inter, system-ui, Avenir, Helvetica, Arial;
+  font-family: Arial, Helvetica, sans-serif, Inter, system-ui, Avenir;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

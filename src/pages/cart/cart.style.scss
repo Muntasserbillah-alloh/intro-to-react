@@ -7,4 +7,24 @@
             margin-bottom: 1rem;
         }
     }
+    .cart-items{
+        .title{
+            margin: 0;
+        }
+        .subtitle{
+            color: var(--text-alt-color-4);
+            font-weight: 600;
+        }
+        .cart-product{
+            .main-image{
+                width: 100px;
+                height: 150px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.product-counter{
+    border: var(--primary-border);
+    padding: 0.3rem 0;
 }

@@ -1,0 +1,11 @@
+.cart-product{
+    .main-image{
+        width: 100px;
+        height: 150px;
+        object-fit: contain;
+    }
+    .product-counter{
+        border: var(--primary-border);
+        padding: 0.3rem 0;
+    }
+}

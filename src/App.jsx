@@ -14,6 +14,7 @@ function App() {
               colorPrimary: "#ff9800",
               colorLink: "#ff9800",
               borderRadius: 2,
+              fontFamily: "Arial",
             },
         }}
       >
