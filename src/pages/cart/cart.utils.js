@@ -27,7 +27,7 @@ export const dummySummaryCardData = {
     },
     {
       label: "Estimated Delivery By",
-      value: moment().add("month", 1).format("DD MMM, YYYY"),
+      value: moment().add(1, "month").format("DD MMM, YYYY"),
     },
   ],
 };

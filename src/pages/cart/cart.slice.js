@@ -2,6 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   loading: false,
+  step: "itemsList",
+  selectedAddress: "address1",
 };
 
 const cartSlice = createSlice({
@@ -10,6 +12,12 @@ const cartSlice = createSlice({
   reducers: {
     setLoading: (state, action) => {
       state.loading = action.payload;
+    },
+    setStep: (state, action) => {
+      state.step = action.payload;
+    },
+    setSelectedAddress: (state, action) => {
+      state.selectedAddress = action.payload;
     },
   },
   // extraReducers: (builder) => {

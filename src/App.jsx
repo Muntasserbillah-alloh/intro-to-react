@@ -11,11 +11,18 @@ function App() {
       <ConfigProvider
         theme={{
             token: {
-              colorPrimary: "#ff9800",
-              colorLink: "#ff9800",
+              colorPrimary: "#34a0a4",
+              colorLink: "#34a0a4",
               borderRadius: 2,
               fontFamily: "Arial",
             },
+            components:{
+              Button:{
+                defaultBorderColor: "#34a0a4",
+                colorText: "#34a0a4"
+
+              }
+            }
         }}
       >
         <Suspense fallback="loading...">

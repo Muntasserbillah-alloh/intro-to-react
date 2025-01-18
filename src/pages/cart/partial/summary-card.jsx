@@ -1,9 +1,29 @@
 import { Button, Card, Col, Divider, Input, Row, Typography } from "antd";
-import "../cart.style.scss";
 import { dummySummaryCardData } from "../cart.utils";
 import { GlobalOutlined } from "@ant-design/icons";
+import { useAppDispatch, useAppSelector } from "../../../shared/hooks/redux-hooks";
+import cartSliceAction from "../cart.slice";
+import "../cart.style.scss";
 
 function SummaryCard() {
+    const {step} = useAppSelector(({Cart})=>Cart);
+    const dispatch = useAppDispatch();
+    function handelToNextStepClick() {
+        let nextStep = "itemsList";
+        switch (step) {
+            case "itemsList":
+                nextStep ="selectAddress"
+                break;
+            case "selectAddress":
+                nextStep ="selectShipment"
+                break;
+            case "selectShipment":
+                nextStep ="selectPayment"
+                break;
+        }
+        dispatch(cartSliceAction.setStep(nextStep));
+    }
+    
     function getSummaryItems({label, value, color ="#000"}) {
         return(
             <Row 
@@ -70,6 +90,7 @@ function SummaryCard() {
                                 block size="large"
                                 type={"primary"}
                                 className="main-btn"
+                                onClick={handelToNextStepClick}
                             >
                                 Proceed to Checkout
                             </Button>

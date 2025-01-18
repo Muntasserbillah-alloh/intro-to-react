@@ -36,7 +36,7 @@ function CartProductUi({ name, image, price, color, onQuantityChange, quantity, 
                     </Col>
                     <Col span={24}>
                         <Space direction="horizontal" align="middle">
-                            <Typography.Text style={{ color: "rgba(0,0,0,0.4" }}>Color</Typography.Text>
+                            <Typography.Text type={"secondary"}>Color</Typography.Text>
                             <Typography.Text>{color}</Typography.Text>
                         </Space>
                     </Col>

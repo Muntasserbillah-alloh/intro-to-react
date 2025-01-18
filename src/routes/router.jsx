@@ -14,6 +14,10 @@ const routes = [
         element: <Pages.CartUi/>
     },
     {
+        path: ROUTES.PRODUCT,
+        element: <Pages.ProductUi/>
+    },
+    {
         path: ROUTES.NOT_FOUND,
         element: <Pages.NotFoundUi />,
     },

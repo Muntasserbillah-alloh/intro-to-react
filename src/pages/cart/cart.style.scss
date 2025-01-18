@@ -23,6 +23,21 @@
             }
         }
     }
+    .cart-select-address{
+        width: 100%;
+        .address-radio{
+            width: 100%;
+        }
+    }
+    .tabledList{
+        width: 100%;
+        border-collapse: collapse;
+        td{
+            border: 1px solid #d9d9d9;
+            padding: 1rem;
+            border-radius: 2px;
+        }
+    }
 }
 .product-counter{
     border: var(--primary-border);
