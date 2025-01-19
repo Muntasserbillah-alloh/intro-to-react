@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "proxima";
+  src: url("./assets//fonts/proximanova_bold.otf");
+}
+
 :root {
   --primary-color: #3AA39F;
   --primary-color-hovered: #d58000;
@@ -14,11 +19,13 @@
   --text-green-color: rgb(26, 152, 130);
   --text-red-color: rgb(235, 61, 77);
   
-  font-family: Arial, Helvetica, sans-serif, Inter, system-ui, Avenir;
+  font-family: proxima, Arial, Helvetica, sans-serif, Inter, system-ui, Avenir;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 600;
+
 }
 html, body {
   margin: 0;

@@ -14,7 +14,7 @@ function App() {
               colorPrimary: "#3AA39F",
               colorLink: "#3AA39F",
               borderRadius: 2,
-              fontFamily: "Arial",
+              fontFamily: "proxima, Arial",
             },
             components:{
               Button:{
