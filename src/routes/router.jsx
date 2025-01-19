@@ -7,7 +7,7 @@ import * as Pages from '../pages';
 const routes = [
     {
         path: ROUTES.BASE,
-        element: <Pages.CartUi/>
+        element: <Pages.ProductUi/>
     },
     {
         path: ROUTES.CART,

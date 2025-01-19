@@ -1,5 +1,5 @@
-import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
 import { Button, Col, Image, Row, Space, Typography } from "antd";
+import CustomCounter from "../custom-counter/custom-counter.ui";
 import "./cart-product.style.scss";
 
 // eslint-disable-next-line react/prop-types
@@ -43,26 +43,11 @@ function CartProductUi({ name, image, price, color, onQuantityChange, quantity, 
                     <Col span={24}>
                         <Row align={"middle"} justify={"start"} gutter={16}>
                             <Col>
-                                <Row
-                                    align={"middle"} justify={"space-between"}
-                                    className="product-counter" gutter={16}
-                                >
-                                    <Col>
-                                        <Button
-                                            type="link"
-                                            icon={<MinusOutlined />}
-                                            onClick={handleMinusClick}
-                                        />
-                                    </Col>
-                                    <Col>{quantity}</Col>
-                                    <Col>
-                                        <Button
-                                            type={"link"}
-                                            icon={<PlusOutlined />}
-                                            onClick={handlePlusClick}
-                                        />
-                                    </Col>
-                                </Row>
+                                <CustomCounter 
+                                onMinusClick={handleMinusClick} 
+                                onPluseClick={handlePlusClick} 
+                                value={quantity}
+                                />
                             </Col>
                             <Col>
                                 <Button

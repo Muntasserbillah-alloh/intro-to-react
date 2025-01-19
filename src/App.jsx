@@ -20,7 +20,6 @@ function App() {
               Button:{
                 defaultBorderColor: "#34a0a4",
                 colorText: "#34a0a4"
-
               }
             }
         }}

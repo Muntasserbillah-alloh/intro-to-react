@@ -11,9 +11,11 @@ function BarHeader() {
             className="bar-header"
         >
             <Col className="logo-col">
+                <Link to={ROUTES.BASE}>
                 <Avatar
                 icon={<DropboxOutlined />}
                 />
+                </Link>
             </Col>
             <Col>
                 <Row 
