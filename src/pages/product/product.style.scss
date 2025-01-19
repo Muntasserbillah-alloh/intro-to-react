@@ -1,0 +1,38 @@
+.product{
+    position: relative;
+    max-width: 1800px;
+    .green-rectangular{
+        background-image: url("../../assets//images/rectangular.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        z-index: +1;
+        top: 204px;
+        width: 440px;
+        height: 250px;
+    }
+}
+.product-carousel-main-itm{
+    .product-carousel-main-itm-img{
+        height: 425px !important;
+        object-fit: cover;
+    }
+}
+.product-carousel-card{
+    border-radius: 5px;
+    border: 2px solid #D1D1D8;
+    .ant-card-body{
+        padding: 6px;
+    }
+    .product-carousel-img{
+        width: 88px !important;
+        height: 88px !important;
+        border-radius: 5px !important;
+        object-fit: cover;
+        user-select: none !important;
+    }
+    &.active{
+        border: 2px solid var(--primary-color);
+    }
+}

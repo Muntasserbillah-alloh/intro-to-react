@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 const colors = [
-  { color: "#d9d9d9", value: "gray" }, // Gray
-  { color: "#495464", value: "blue" }, // Blue
-  { color: "#343a40", value: "black" }, // Black
-  { color: "#c9ada7", value: "pink" }, // Pink
+  { color: "#C1BDB3", value: "gray" }, // Gray
+  { color: "#58737D", value: "blue" }, // Blue
+  { color: "#545454", value: "black" }, // Black
+  { color: "#CBA5A5", value: "pink" }, // Pink
 ];
 
 const ColorSelector = () => {
@@ -28,7 +28,7 @@ const ColorSelector = () => {
             cursor: "pointer",
             border:
               selectedColor === colorOption.value
-                ? "3px solid rgba(150, 139, 139, 0.5)"
+                ? "3px solid  rgba(23, 24, 59, 0.1)"
                 : "3px solid transparent",
             boxSizing: "border-box",
             transition: "border 0.3s ease",

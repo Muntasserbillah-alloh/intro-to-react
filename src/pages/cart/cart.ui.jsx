@@ -3,9 +3,9 @@ import SummaryCard from "./partial/summary-card";
 import CartItems from "./partial/cart-items";
 import { useAppSelector } from "../../shared/hooks/redux-hooks";
 import SelectAddress from "./partial/select-address";
-import "./cart.style.scss";
 import SelectShipment from "./partial/select-shipment";
 import SelectPayment from "./partial/select-payment";
+import "./cart.style.scss";
 
 function CartUi() {
     const {step} = useAppSelector(({Cart})=>Cart);

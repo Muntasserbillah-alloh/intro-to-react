@@ -11,15 +11,15 @@ function App() {
       <ConfigProvider
         theme={{
             token: {
-              colorPrimary: "#34a0a4",
-              colorLink: "#34a0a4",
+              colorPrimary: "#3AA39F",
+              colorLink: "#3AA39F",
               borderRadius: 2,
               fontFamily: "Arial",
             },
             components:{
               Button:{
-                defaultBorderColor: "#34a0a4",
-                colorText: "#34a0a4"
+                defaultBorderColor: "#3AA39F",
+                colorText: "#3AA39F"
               }
             }
         }}

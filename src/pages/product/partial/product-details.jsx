@@ -2,6 +2,8 @@ import { ArrowLeftOutlined, FacebookFilled, HeartOutlined, InstagramOutlined, Pi
 import { Breadcrumb, Button, Col, Rate, Row, Space, Typography } from "antd";
 import ColorSelector from "./color-picker";
 import CustomCounter from "../../../shared/custom-counter/custom-counter.ui";
+import { Link } from "react-router-dom";
+import ROUTES from '../../../routes/routes'
 
 const {Title, Text, Paragraph} = Typography;
 
@@ -63,7 +65,9 @@ function ProductDetails() {
                         <Row gutter={32} align={"middle"} style={{marginBottom: "2rem"}}>
                             <Col span={8}><CustomCounter value={1}/></Col>
                             <Col span={8}>
+                                <Link to={ROUTES.CART}>
                                 <Button size="large" type="primary" block>Add to Cart</Button>
+                                </Link>
                             </Col>
                         </Row>
                     </Col>
@@ -85,17 +89,21 @@ function ProductDetails() {
                 </Row>
             </Col>
             <Col span={24}>
-                <Row justify={"space-between"} align={"middle"}>
-                    <Col>
-                        <Button style={{padding:0}} type="link" icon={<HeartOutlined/>}>Add to Wishlist</Button>
-                    </Col>
-                    <Col>
-                        <Space size={4}>
-                            <Button type="link" icon={<FacebookFilled style={{borderRadius:"50%"}}/>}/>
-                            <Button type="link" icon={<TwitterOutlined style={{borderRadius:"50%"}}/>}/>
-                            <Button type="link" icon={<PinterestFilled style={{borderRadius:"50%"}}/>}/>
-                            <Button type="link" icon={<InstagramOutlined style={{borderRadius:"50%"}}/>}/>
-                        </Space>
+                <Row  style={{height: "100%"}} align={"middle"}>
+                    <Col span={24}>
+                        <Row justify={"space-between"} align={"middle"}>
+                            <Col>
+                                <Button style={{padding:0}} type="link" icon={<HeartOutlined/>}>Add to Wishlist</Button>
+                            </Col>
+                            <Col>
+                                <Space size={4}>
+                                    <Button type="link" icon={<FacebookFilled style={{borderRadius:"50%"}}/>}/>
+                                    <Button type="link" icon={<TwitterOutlined style={{borderRadius:"50%"}}/>}/>
+                                    <Button type="link" icon={<PinterestFilled style={{borderRadius:"50%"}}/>}/>
+                                    <Button type="link" icon={<InstagramOutlined style={{borderRadius:"50%"}}/>}/>
+                                </Space>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Col>

@@ -1,8 +1,9 @@
-import { DropboxOutlined, MenuOutlined, SearchOutlined, ShoppingCartOutlined } from "@ant-design/icons";
-import { Avatar, Button, Col, Row } from "antd";
+import { MenuOutlined, SearchOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import { Button, Col, Image, Row } from "antd";
 import ROUTES from "../../routes/routes"
-import "./bar-header.style.scss";
+import Cozy from "../../assets/images/cozy.svg";
 import { Link } from "react-router-dom";
+import "./bar-header.style.scss";
 
 function BarHeader() {
     return(
@@ -12,9 +13,7 @@ function BarHeader() {
         >
             <Col className="logo-col">
                 <Link to={ROUTES.BASE}>
-                <Avatar
-                icon={<DropboxOutlined />}
-                />
+                <Image src={Cozy} preview={false}/>
                 </Link>
             </Col>
             <Col>
