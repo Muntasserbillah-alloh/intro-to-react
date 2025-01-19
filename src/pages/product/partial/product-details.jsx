@@ -54,7 +54,7 @@ function ProductDetails() {
                         </Row>
                     </Col>
                     <Col span={24} style={{marginBottom: "1rem"}} >
-                        <Paragraph style={{textAlign: "justify", fontWeight:300}}>
+                        <Paragraph style={{textAlign: "justify"}}>
                             The gently curved lines accentuated by sewn details are king to your body and pleasant to look at. Also, there&apos;s a tilt and height-adjusted mechanism that&apos;s built to outlast years of ups and downs.
                         </Paragraph>
                     </Col>
@@ -71,7 +71,7 @@ function ProductDetails() {
                             </Col>
                         </Row>
                     </Col>
-                    <Col span={24} style={{fontWeight:300}}>
+                    <Col span={24} >
                         <Space>
                             <Text>
                                 Free 3-5 day shipping 
