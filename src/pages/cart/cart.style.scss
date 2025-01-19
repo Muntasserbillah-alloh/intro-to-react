@@ -43,3 +43,10 @@
     border: var(--primary-border);
     padding: 0.3rem 0;
 }
+.step-navigator{
+    font-size: 1.5rem;
+    margin-bottom: 64px;
+    .ant-breadcrumb-separator{
+        margin: 0 40px;
+    }
+}

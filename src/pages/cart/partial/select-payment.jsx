@@ -1,6 +1,6 @@
-import { Button, Col, Radio, Row, Space, Typography } from "antd";
+import { Button, Col, Divider, Radio, Row, Space, Typography } from "antd";
 import TabledList from "./tabled-list";
-import { CreditCardOutlined } from "@ant-design/icons";
+import { CreditCardOutlined, PlusOutlined } from "@ant-design/icons";
 import moment from "moment";
 
 function SelectPayment(){
@@ -51,6 +51,14 @@ function SelectPayment(){
             <Radio.Group style={{width: "100%"}}>
                 <TabledList items={shipmentOptions}/>
             </Radio.Group>
+            </Col>
+            <Col span={24}>
+                <Divider style={{margin:0}}/>
+            </Col>
+            <Col span={24}>
+                <Button type="link" icon={<PlusOutlined/>} style={{padding:0}}>
+                    Add Payment method
+                </Button>
             </Col>
         </Row>
     );

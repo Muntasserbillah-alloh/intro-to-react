@@ -1,10 +1,11 @@
-import { Col, Row } from "antd";
+import { Breadcrumb, Col, Row } from "antd";
 import SummaryCard from "./partial/summary-card";
 import CartItems from "./partial/cart-items";
 import { useAppSelector } from "../../shared/hooks/redux-hooks";
 import SelectAddress from "./partial/select-address";
 import SelectShipment from "./partial/select-shipment";
 import SelectPayment from "./partial/select-payment";
+import { RightOutlined } from "@ant-design/icons";
 import "./cart.style.scss";
 
 function CartUi() {
@@ -21,11 +22,51 @@ function CartUi() {
                         step === "itemsList"
                             ?
                         <CartItems/>
-                        :step === "selectAddress"?
-                        <SelectAddress/>
-                        :step === "selectShipment"?
-                        <SelectShipment/>
-                        :<SelectPayment/>
+                        :<Row>
+                            <Col span={24}>
+                            <Breadcrumb 
+                            separator={<RightOutlined color="#A2A3B1" />}
+                            className="step-navigator"
+                            >
+                                <Breadcrumb.Item>
+                                    <span 
+                                    style={
+                                        step === "selectAddress"
+                                        ?{ fontWeight: "bold", color: "#000" }
+                                        :{ color: "#bbb" }
+                                        }
+                                    >Address</span>
+                                </Breadcrumb.Item>
+                                <Breadcrumb.Item>
+                                    <span 
+                                     style={
+                                        step === "selectShipment"
+                                        ?{ fontWeight: "bold", color: "#000" }
+                                        :{ color: "#bbb" }
+                                        }
+                                    >Shipping</span>
+                                </Breadcrumb.Item>
+                                <Breadcrumb.Item>
+                                    <span
+                                     style={
+                                        step === "selectPayment"
+                                        ?{ fontWeight: "bold", color: "#000" }
+                                        :{ color: "#bbb" }
+                                        }
+                                    >Payment</span>
+                                </Breadcrumb.Item>
+                            </Breadcrumb>
+                            </Col>
+                            <Col span={24}>
+                                {
+                                    step === "selectAddress"?
+                                    <SelectAddress/>
+                                    :step === "selectShipment"?
+                                    <SelectShipment/>
+                                    :<SelectPayment/>
+                                }
+                            </Col>
+                        </Row>
                     }
                     </Col>
                     <Col span={8}>
