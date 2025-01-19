@@ -1,6 +1,5 @@
 import { Col, Row,  } from "antd";
 import ProductDetails from "./partial/product-details";
-import ProductCarousel from "./partial/prduct-gallery";
 
 function ProductUi (){
     return(
@@ -18,7 +17,6 @@ function ProductUi (){
                     </Col>
                     <Col span={4}/>
                     <Col span={12}>
-                        <ProductCarousel/>
                     </Col>
                 </Row>
             </Col>
