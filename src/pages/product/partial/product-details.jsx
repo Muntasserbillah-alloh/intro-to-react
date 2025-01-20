@@ -9,7 +9,7 @@ const {Title, Text, Paragraph} = Typography;
 
 function ProductDetails() {
     return(
-        <Row gutter={[0,40]} style={{height:"100%"}}>
+        <Row gutter={[0,80]}>
             <Col span={24}>
                 <Row gutter={[0,24]}>
                     <Col>

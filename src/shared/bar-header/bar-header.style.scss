@@ -19,3 +19,8 @@
         }
     }
 }
+@media only screen and (max-width: 767px) {
+    .hide-until-sm{
+        display: none  !important;
+    }
+}

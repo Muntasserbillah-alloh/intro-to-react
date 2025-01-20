@@ -14,24 +14,23 @@ function ProductUi (){
     return(
         <Row 
         justify={"center"} align={"top"} 
-        gutter={[0,16]} style={{height:"100%"}}
+        gutter={[0,16]} style={{minHeight:"100%"}}
         className="product"
         >
             <Col 
             span={22} 
-            style={{paddingTop: "2rem", paddingBottom: "2rem", height:"100%"}}
+            style={{paddingTop: "2rem", paddingBottom: "2rem",}}
             >
-                <Row style={{height:"100%"}}>
-                    <Col span={8} style={{height:"100%"}}>
+                <Row>
+                    <Col md={8} sm={24} xs={24}>
                         <ProductDetails/>
                     </Col>
-                    <Col span={4}/>
-                    <Col span={12}>
-                        <Row justify={"center"}  style={{height:"100%"}}>
-                            <Col  style={{height:"100%"}}>
+                    <Col md={4} sm={0} xs={0}/>
+                    <Col md={8} sm={24} xs={24}>
+                        <Row justify={"center"}  >
+                            <Col>
                                 <Row
                                 gutter={[0,32]}  
-                                style={{height:"100%"}}
                                 >
                                     <Col span={24}>
                                         <Row justify={"end"}>

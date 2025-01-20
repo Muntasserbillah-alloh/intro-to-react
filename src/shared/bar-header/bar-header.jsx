@@ -16,7 +16,7 @@ function BarHeader() {
                 <Image src={Cozy} preview={false}/>
                 </Link>
             </Col>
-            <Col>
+            <Col className="hide-until-sm">
                 <Row 
                 justify={"center"} align={"middle"}
                 gutter={16} className="center-nav"
@@ -28,7 +28,7 @@ function BarHeader() {
                     <Col>CONTACT</Col>
                 </Row>
             </Col>
-            <Col>
+            <Col className="hide-until-sm">
                 <Row 
                     justify={"center"} align={"middle"}
                     gutter={32} style={{height: "100%"}}
