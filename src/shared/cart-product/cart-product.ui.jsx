@@ -1,8 +1,8 @@
 import { Button, Col, Image, Row, Space, Typography } from "antd";
 import CustomCounter from "../custom-counter/custom-counter.ui";
+import PropTypes from 'prop-types';
 import "./cart-product.style.scss";
 
-// eslint-disable-next-line react/prop-types
 function CartProductUi({ name, image, price, color, onQuantityChange, quantity, onRemove }) {
     function handleMinusClick() {
         if(typeof onQuantityChange === "function"){
@@ -66,3 +66,21 @@ function CartProductUi({ name, image, price, color, onQuantityChange, quantity, 
     );
 }
 export default CartProductUi;
+
+CartProductUi.propTypes={
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    price: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ]).isRequired,
+    color: PropTypes.string.isRequired,
+    onQuantityChange: PropTypes.func,
+    quantity: PropTypes.number,
+    onRemove: PropTypes.func.isRequired, 
+}
+CartProductUi.defaultProps = {
+    quantity: 1,
+    onQuantityChange: null,
+};
+  

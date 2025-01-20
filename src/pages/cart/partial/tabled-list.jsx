@@ -1,5 +1,5 @@
-/* eslint-disable */
 import { Col, Row } from "antd";
+import PropTypes from 'prop-types';
 import "../cart.style.scss";
 
 function TabledList({ items }) {    
@@ -27,3 +27,7 @@ function TabledList({ items }) {
     );
 }
 export default TabledList;
+
+TabledList.propTypes={
+    items: PropTypes.array.isRequired
+}

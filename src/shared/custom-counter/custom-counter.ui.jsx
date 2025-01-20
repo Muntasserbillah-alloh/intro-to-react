@@ -1,7 +1,7 @@
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
+import PropTypes from 'prop-types';
 import { Button, Col, Row } from "antd";
 
-// eslint-disable-next-line react/prop-types
 function CustomCounter({onMinusClick, onPluseClick, value}) {
     return(
         <Row
@@ -30,4 +30,13 @@ function CustomCounter({onMinusClick, onPluseClick, value}) {
     </Row>
     );
 }
-export default CustomCounter
+export default CustomCounter;
+
+CustomCounter.propTypes={
+    onMinusClick: PropTypes.func.isRequired, 
+    onPluseClick: PropTypes.func.isRequired, 
+    value: PropTypes.number.isRequired
+}
+CustomCounter.defaultProps = {
+    value: 1,
+};
