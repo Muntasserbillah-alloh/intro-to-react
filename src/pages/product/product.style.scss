@@ -12,6 +12,9 @@
         width: 440px;
         height: 250px;
     }
+    .product-details-control-container{
+        margin-bottom: 2rem;
+    }
 }
 .product-carousel-main-itm{
     .product-carousel-main-itm-img{
@@ -34,5 +37,15 @@
     }
     &.active{
         border: 2px solid var(--primary-color);
+    }
+}
+@media only screen and (max-width: 767px) {
+    .product{
+        .product-details-control-container{
+            margin-bottom: 0px;
+        }
+    }
+    .green-rectangular{
+        display: none;
     }
 }

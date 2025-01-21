@@ -1,11 +1,17 @@
+import { useState } from "react";
 import { MenuOutlined, SearchOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import { Button, Col, Image, Row } from "antd";
 import ROUTES from "../../routes/routes"
 import Cozy from "../../assets/images/cozy.svg";
 import { Link } from "react-router-dom";
 import "./bar-header.style.scss";
+import NavDrawer from "./partials/nav-drawer";
 
 function BarHeader() {
+    const [isNavDrawerOpen,setIsNavDrawerOpen] = useState(false);
+    function handleCloseNavDrawer() {
+        setIsNavDrawerOpen(false);
+    }
     return(
         <Row 
             justify={"space-between"} align={"middle"}
@@ -13,10 +19,10 @@ function BarHeader() {
         >
             <Col className="logo-col">
                 <Link to={ROUTES.BASE}>
-                <Image src={Cozy} preview={false}/>
+                    <Image src={Cozy} preview={false}/>
                 </Link>
             </Col>
-            <Col className="hide-until-sm">
+            <Col className="hide-sm">
                 <Row 
                 justify={"center"} align={"middle"}
                 gutter={16} className="center-nav"
@@ -28,7 +34,7 @@ function BarHeader() {
                     <Col>CONTACT</Col>
                 </Row>
             </Col>
-            <Col className="hide-until-sm">
+            <Col className="hide-sm">
                 <Row 
                     justify={"center"} align={"middle"}
                     gutter={32} style={{height: "100%"}}
@@ -62,6 +68,15 @@ function BarHeader() {
                     </Col>
                 </Row>
             </Col>
+            <Col
+            className="show-sm-menu"
+            >
+                <Button 
+                type={"link"} icon={<MenuOutlined/>}
+                onClick={()=>setIsNavDrawerOpen(true)}
+                />
+            </Col>
+            <NavDrawer isOpen={isNavDrawerOpen} onClose={handleCloseNavDrawer}/>
         </Row>
     );
 }

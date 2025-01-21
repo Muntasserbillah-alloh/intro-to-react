@@ -9,7 +9,7 @@ const {Title, Text, Paragraph} = Typography;
 
 function ProductDetails() {
     return(
-        <Row gutter={[0,80]}>
+        <Row gutter={[0,{md:80, sm:40, xs:30}]}>
             <Col span={24}>
                 <Row gutter={[0,24]}>
                     <Col>
@@ -62,8 +62,8 @@ function ProductDetails() {
                         <ColorSelector/>
                     </Col>
                     <Col span={24}>
-                        <Row gutter={32} align={"middle"} style={{marginBottom: "2rem"}}>
-                            <Col span={8}><CustomCounter value={1}/></Col>
+                        <Row gutter={32} align={"middle"} className="product-details-control-container">
+                            <Col md={8} sm={12} xs={12}><CustomCounter value={1}/></Col>
                             <Col span={8}>
                                 <Link to={ROUTES.CART}>
                                 <Button size="large" type="primary" block>Add to Cart</Button>
@@ -71,7 +71,7 @@ function ProductDetails() {
                             </Col>
                         </Row>
                     </Col>
-                    <Col span={24} >
+                    <Col md={24} sm={0} xs={0} >
                         <Space>
                             <Text>
                                 Free 3-5 day shipping 

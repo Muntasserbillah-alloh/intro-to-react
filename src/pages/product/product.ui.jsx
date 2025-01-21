@@ -14,14 +14,14 @@ function ProductUi (){
     return(
         <Row 
         justify={"center"} align={"top"} 
-        gutter={[0,16]} style={{minHeight:"100%"}}
+        style={{minHeight:"100%"}}
         className="product"
         >
             <Col 
             span={22} 
             style={{paddingTop: "2rem", paddingBottom: "2rem",}}
             >
-                <Row>
+                <Row gutter={[0,{md:0, sm:80, xs:80}]}>
                     <Col md={8} sm={24} xs={24}>
                         <ProductDetails/>
                     </Col>
@@ -59,12 +59,12 @@ function ProductUi (){
                                                     <Image className="product-carousel-img" src={SecondImage} alt="product-preview" preview={false}/>
                                                 </Card>
                                             </Col>
-                                            <Col className="product-carousel-itm">
+                                            <Col className="product-carousel-itm hide-sm">
                                                 <Card className="product-carousel-card">
                                                     <Image className="product-carousel-img" src={ThirdImage} alt="product-preview" preview={false}/>
                                                 </Card>
                                             </Col>
-                                            <Col className="product-carousel-itm">
+                                            <Col className="product-carousel-itm hide-sm">
                                                 <Card className="product-carousel-card">
                                                     <Image className="product-carousel-img" src={FourthImage} alt="product-preview" preview={false}/>
                                                 </Card>
