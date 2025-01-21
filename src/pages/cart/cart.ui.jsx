@@ -16,8 +16,8 @@ function CartUi() {
             className="cart"
         >
             <Col span={22}>
-                <Row gutter={100}>
-                    <Col flex={"1"}>
+                <Row gutter={[{md:100, sm:0,xs:0}, {md:0, sm:80, xs:80}]}>
+                    <Col md={16} sm={24} xs={24}>
                     {
                         step === "itemsList"
                             ?
@@ -69,7 +69,7 @@ function CartUi() {
                         </Row>
                     }
                     </Col>
-                    <Col span={8}>
+                    <Col md={8} sm={24} xs={24}>
                         <SummaryCard/>
                     </Col>
                 </Row>

@@ -1,6 +1,6 @@
 import { Col, Divider, Row, Space, Typography } from "antd";
 import CartProductUi from "../../../shared/cart-product/cart-product.ui";
-import DummyImage from "../../../assets/images/Vehicle-Hyudai-Elantra.png";
+import DummyImage from "../../../assets/images/main-product-image.svg";
 
 function CartItems() {
     return(
@@ -31,6 +31,7 @@ function CartItems() {
                          quantity={1}
                          />
                     </Col>
+                    <Col md={0} sm={24} xs={24}><Divider style={{margin: 0}}/></Col>
                 </Row>
             </Col>
         </Row>

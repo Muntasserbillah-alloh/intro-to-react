@@ -57,6 +57,7 @@ function SelectShipment() {
             suffixIcon={<DownOutlined/>}
             variant="borderless"
             style={{padding: 0}}
+            className="hide-sm"
         />
         }
     ]

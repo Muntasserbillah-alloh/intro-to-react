@@ -15,13 +15,6 @@
             color: var(--text-alt-color-4);
             font-weight: 600;
         }
-        .cart-product{
-            .main-image{
-                width: 100px;
-                height: 150px;
-                object-fit: contain;
-            }
-        }
     }
     .cart-select-address{
         width: 100%;
@@ -48,5 +41,17 @@
     margin-bottom: 64px;
     .ant-breadcrumb-separator{
         margin: 0 40px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .summary-card{
+        margin-bottom: 2rem;
+    }
+    .step-navigator{
+        font-size: 1rem;
+        margin-bottom: 40px;
+        .ant-breadcrumb-separator{
+            margin: 0 1rem;
+        }
     }
 }

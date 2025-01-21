@@ -20,7 +20,7 @@ function SelectPayment(){
                     </Space>
                 </Radio>
             ,
-            right: <Button type="text" danger>Remove</Button>
+            right: <Button type="text" danger className="hide-sm">Remove</Button>
         },{
             key: "payment2",
             left:<Radio value={"payment2"}>
@@ -36,7 +36,7 @@ function SelectPayment(){
                     </Space>
                 </Radio>
             ,
-            right: <Button type="text" danger>Remove</Button>
+            right: <Button type="text" danger className="hide-sm">Remove</Button>
         },
     ]
     return(

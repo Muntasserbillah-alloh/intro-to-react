@@ -2,7 +2,7 @@
     .main-image{
         width: 100px;
         height: 150px;
-        object-fit: contain;
+        object-fit: cover;
     }
     .product-counter{
         border: var(--primary-border);
